@@ -71,7 +71,7 @@ module BaremetricsAPI
         end
       end
 
-      def show_plan_breakout_request(metric, start_date, end_date)
+      def show_plan_breakout_request(metric, start_date, end_date, plan)
         query_params = {
           per_page: @client.configuration.response_limit,
           start_date: start_date,
